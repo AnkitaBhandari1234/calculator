@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div >
+        <input type="text" placeholder="0" id="inputbox" result()>
+        </div>
+        <div class="calc_data">
+            <div>
+            <button onclick="clickMe(7)">7</button>
+            <button onclick="clickMe(8)">8</button>
+            <button onclick="clickMe(9)">9</button>
+            <button class="operator" id="delete"  onclick="clickOper('DEL')">DEL</button>
+            </div>
+            <div>
+                <button onclick="clickMe(4)">4</button>
+                <button onclick="clickMe(5)">5</button>
+                <button onclick="clickMe(6)">6</button>
+                <button class="operator" onclick="clickOper('+')">+</button>
+            </div>
+            <div>
+                <button onclick="clickMe(1)">1</button>
+                <button onclick="clickMe(2)">2</button>
+                <button onclick="clickMe(3)">3</button>
+                <button  onclick="clickOper('-')">-</button>
+            </div>
+            <div>
+                <button class="operator" onclick="clickOper('.')">.</button>
+                <button onclick="clickMe(0)">0</button>
+                <button class="operator" onclick="clickOper('/')">/</button>
+                <button class="operator" onclick="clickOper('*')">*</button>
+            </div>
+            <div class="two_oper">
+                <button class="operators" id="reset" onclick="reset()">RESET</button>
+                <button class="operators" id="equalbtn" onclick="result()" >=</button>
+            </div>
+        </div>
+    </div>
+  
+   <script src="script.js"></script>
+    
+</body>
+</html>
