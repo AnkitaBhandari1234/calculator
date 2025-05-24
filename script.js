@@ -18,7 +18,7 @@ const clickMe = (a) => {
     inputBox.value += a;
   }
 
-  //   console.log(a);
+  
 };
 
 // function for operator
